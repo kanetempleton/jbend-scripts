@@ -1,12 +1,15 @@
 #! /bin/bash
 
 if [ $# -ne 1 ]; then
-echo "usage: jbend <pulljar>"
+echo "usage: jbend <getjar,updatejar>"
 else
 
 case $1 in
-pulljar)
-~/jbend-scripts/pulljar.sh
+getjar)
+~/me/script/jbend-scripts/pulljar.sh
+;;
+updatejar)
+pwd
 ;;
 *)
 echo "undefined option: $1"
